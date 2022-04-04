@@ -68,7 +68,7 @@ export default function App() {
     arrayList.length !== 0 && !loading && arrayList.length !== totalHits;
 
   return (
-    <div>
+    <div className={s.App}>
       <Searchbar onSubmit={handleFormSubmit} />
       {loading && <Loader />}
       {arrayList.length !== 0 && (
