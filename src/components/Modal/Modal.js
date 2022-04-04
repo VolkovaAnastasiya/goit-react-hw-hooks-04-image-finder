@@ -11,6 +11,7 @@ export default function Modal({ onToggleMenu, modalImage }) {
     return () => {
       window.removeEventListener('keydown', hendleKeyDownEsc);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const hendleKeyDownEsc = e => {
